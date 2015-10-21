@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create your own bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/tomorrow-night.min.css">
+    <link rel="stylesheet" href="css/components.min.css">
+    <link rel="stylesheet" href="css/preso.css">
+  </head>
+
+  <body>
+    <header class="k-header">
+      <div class="k-wrapper">
+        <h1><a class="k-headline" href="1.html">Bad practices</a></h1>
+      </div>
+    </header>
+    <div class="k-content">
+      <div class="k-wrapper">
+        <div class="k-body">
+          <header class="k-center">
+            <h2 class="k-display">Nesting <i>vs</i> Prefixing classnames</h2>
+          </header>
+          <div columns="2" class="k-left k-gutter">
+            <pre>
+              <code class="css">
+.post {
+  & > p {
+      a {
+          color: red;
+      }
+  }
+}
+              </code>
+            </pre>
+            <pre>
+              <code class="css">
+.myfwrk-link { color: red; }
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

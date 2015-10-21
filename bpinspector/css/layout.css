@@ -1,0 +1,27 @@
+.k-header {
+  background: #007486;
+}
+
+[data-columns] > * {
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+[data-columns].active,
+[data-columns] > .active {
+  border-color: #007486;
+}
+
+span + .k-button.small {
+  margin-left: 10px;
+}
+
+[data-columns] {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #eee;
+}

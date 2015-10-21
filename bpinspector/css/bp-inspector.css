@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background: #ececec;
+}
+
+header {
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  padding: 0 20px;
+  border-bottom: 1px solid #EEE;
+}
+
+#bp-form,
+#breakpoints {
+  float: left;
+}
+
+#bp-form {
+  margin: 15px 0 0 0;
+}
+
+#bp-form input {
+  width: 35px;
+  text-align: right;
+  font-size: 14px;
+  border: none;
+  padding: 5px 2px;
+  border-radius: 3px;
+}
+
+#bp-form input:hover,
+#bp-form input:focus {
+  background: rgba(0,0,0,0.1);
+}
+
+#breakpoints ol {
+  padding: 0;
+  margin: 0;
+}
+
+#breakpoints li {
+  display: inline-block;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+#breakpoints a {
+  color: #333;
+  text-decoration: none;
+}
+
+#main-wrapper {
+  position: absolute;
+  overflow: hidden;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#iframe-wrapper {
+  height: 100%;
+  text-align: center;
+}
+
+#iframe {
+  border: 0;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  transition: width ease 0.5s;
+}
+
+/* Custom properties */
+* { font-family: "Arial", sans-serif; }
+
+.theme-selector {
+  display: inline-block;
+  padding: 14px 0 0 30px;
+}
+
+.theme-selector label {
+  padding-right: 10px;
+}
+
+@media (max-width: 750px) {
+  .theme-selector {
+    padding: 14px 0 0 10px;
+  }
+
+  .theme-selector label {
+    display: none;
+  }
+
+  header h1 {
+    width: 100px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 12px 0;
+  }
+}

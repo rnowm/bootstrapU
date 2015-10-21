@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TEF components demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link id="themeFile" rel="stylesheet" href="../theme_telefonica/css/components.telefonica.css">
+
+    <style>
+      header[data-columns] { padding-top: 30px; }
+      h1 { margin-top: 0; }
+      header > div { padding-top: 2px; }
+      code {
+        display: block;
+        overflow: hidden;
+      }
+      style {
+        display: block;
+        white-space: pre;
+        color: #0086B3;
+        border: 1px solid #cfcece;
+        background: #f2f2f2;
+        margin: 20px 0;
+        line-height: 25px;
+        overflow-y: auto;
+        border-radius: 4px;
+      }.demo {
+        padding: 55px 0;
+      }
+      .demo .k-button {
+        padding: 20px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="k-wrapper k-content">
+      <header data-columns="2 xs1">
+        <h1>Components</h1>
+        <div>
+          <label>Change theme</label>
+          <div class="k-dropdown" data-icon="down">
+            <select id="themeSelector">
+              <option value="telefonica">Telefónica</option>
+              <option value="movistar">Movistar</option>
+              <option value="o2">O2</option>
+              <option value="vivo">Vivo</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <h2>Buttons</h2>
+      <div class="k-row">
+        <button class="k-button small">Small</button>
+        <button class="k-button positive small">Small Positive</button>
+        <button class="k-button negative small">Small Negative</button>
+        <button class="k-button subdued small">Small Subdued</button>
+        <button class="k-button significant small">Small Significant</button>
+      </div>
+      <div class="k-row">
+        <button class="k-button">Default</button>
+        <button class="k-button positive">Positive</button>
+        <button class="k-button negative">Negative</button>
+        <button class="k-button subdued">Subdued</button>
+        <button class="k-button significant">Significant</button>
+      </div>
+      <div class="k-row">
+        <button class="k-button large">Large</button>
+        <button class="k-button positive large">Large Positive</button>
+        <button class="k-button negative large">Large Negative</button>
+        <button class="k-button subdued large">Large Subdued</button>
+        <button class="k-button significant large">Large Significant</button>
+      </div>
+      <div class="k-row">
+        <button class="k-button block small">Small Block</button>
+      </div>
+      <div class="k-row">
+        <button class="k-button block">Block</button>
+      </div>
+      <div class="k-row">
+        <button class="k-button block large">Large Block</button>
+      </div>
+      <div class="k-row">
+        <button class="k-button small">
+          Add
+        </button>
+        <button class="k-button small">
+          <i data-icon="plus"></i>
+        </button>
+        <button class="k-button small">
+          <i data-icon="plus"></i>
+          <span>Add</span>
+        </button>
+        <button class="k-button small">
+          <span>Add</span>
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+      <div class="k-row">
+        <button class="k-button">
+          Add
+        </button>
+        <button class="k-button">
+          <i data-icon="plus"></i>
+        </button>
+        <button class="k-button">
+          <i data-icon="plus"></i>
+          <span>Add</span>
+        </button>
+        <button class="k-button">
+          <span>Add</span>
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+      <div class="k-row">
+        <button class="k-button large">
+          Add
+        </button>
+        <button class="k-button large">
+          <i data-icon="plus"></i>
+        </button>
+        <button class="k-button large">
+          <i data-icon="plus"></i>
+          <span>Add</span>
+        </button>
+        <button class="k-button large">
+          <span>Add</span>
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+      <div class="k-row">
+        <button class="k-button" disabled>Default</button>
+        <button class="k-button positive" disabled>Positive</button>
+        <button class="k-button negative" disabled>Negative</button>
+        <button class="k-button subdued" disabled>Subdued</button>
+        <button class="k-button significant" disabled>Significant</button>
+      </div>
+      <div class="k-group">
+        <button class="k-button">Default</button>
+        <button class="k-button positive">Positive</button>
+        <button class="k-button negative">Negative</button>
+        <button class="k-button subdued">Subdued</button>
+        <button class="k-button significant">Significant</button>
+      </div>
+      <div class="k-group disabled">
+        <button class="k-button">Default</button>
+        <button class="k-button positive">Positive</button>
+        <button class="k-button negative">Negative</button>
+        <button class="k-button subdued">Subdued</button>
+        <button class="k-button significant">Significant</button>
+      </div>
+
+      <h2>Inputs</h2>
+      <div class="k-row">
+        <label class="k-inline">Label</label>
+        <input type="text" class="k-input small" value="input">
+        <input type="text" class="k-input" value="input">
+        <input type="text" class="k-input large" value="input">
+      </div>
+      <div class="k-row">
+        <input class="k-input icon small" type="text" value="Search">
+        <i data-icon="search"></i>
+        <input class="k-input icon" type="text" value="Search">
+        <i data-icon="search"></i>
+        <input class="k-input icon large" type="text" value="Search">
+        <i data-icon="search"></i>
+      </div>
+      <div class="k-row">
+        <label>Label</label>
+        <input type="text" class="k-input small block" value="input">
+      </div>
+      <div class="k-row">
+        <input type="text" class="k-input block" value="input">
+      </div>
+      <div class="k-row">
+        <input class="k-input block icon" type="text" value="Search">
+        <i data-icon="search"></i>
+      </div>
+      <div class="k-row">
+        <input type="text" class="k-input large block" value="input">
+      </div>
+      <div class="k-row k-ok">
+        <input class="k-input" type="text" value="text">
+        <div class="k-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="k-row k-ok">
+        <input class="k-input block" type="text" value="text">
+        <div class="k-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="k-row k-error">
+        <input class="k-input" type="text" value="text">
+        <div class="k-message">
+          This field is invalid
+        </div>
+      </div>
+      <div class="k-row k-error">
+        <input class="k-input block" type="text" value="text">
+        <div class="k-message">
+          This field is invalid
+        </div>
+      </div>
+      <div class="k-group">
+        <a href="" class="k-button small">Anchor</a>
+        <input type="text" class="k-input small" placeholder="Enter user name">
+        <button class="k-button small positive">Button</button>
+      </div>
+      <div class="k-group">
+        <a href="" class="k-button">Anchor</a>
+        <input type="text" class="k-input" placeholder="Enter user name">
+        <button class="k-button positive">Button</button>
+      </div>
+      <div class="k-group">
+        <a href="" class="k-button large">Anchor</a>
+        <input type="text" class="k-input large" placeholder="Enter user name">
+        <button class="k-button large">Button</button>
+      </div>
+      <div class="k-group">
+        <button class="k-button small">
+          <i data-icon="minus"></i>
+        </button>
+        <input type="text" class="k-input small" placeholder="Enter user name">
+        <button class="k-button small">
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+      <div class="k-group">
+        <button class="k-button">
+          <i data-icon="minus"></i>
+        </button>
+        <input type="text" class="k-input" placeholder="Enter user name">
+        <button class="k-button">
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+      <div class="k-group">
+        <button class="k-button large">
+          <i data-icon="minus"></i>
+        </button>
+        <input type="text" class="k-input large" placeholder="Enter user name">
+        <button class="k-button large">
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+
+      <h2>Textareas</h2>
+
+      <div class="k-row k-ok">
+        <textarea class="k-input small">Text</textarea>
+        <textarea class="k-input">Text</textarea>
+        <textarea class="k-input large">Text</textarea>
+      </div>
+      <div class="k-row k-ok">
+        <textarea class="k-input">Text</textarea>
+        <div class="k-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="k-row k-ok">
+        <textarea class="k-input block">Text</textarea>
+        <div class="k-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="k-row k-error">
+        <textarea class="k-input">Text</textarea>
+        <div class="k-message">
+          This field is invalid
+        </div>
+      </div>
+      <div class="k-row k-error">
+        <textarea class="k-input block">Text</textarea>
+        <div class="k-message">
+          This field is invalid
+        </div>
+      </div>
+
+      <h2>Dropdowns</h2>
+      <div class="k-row">
+        <div class="k-dropdown" data-icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="k-dropdown active" data-icon="down">
+          <span>Option 1</span>
+          <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </div>
+        <div class="k-dropdown active up" data-icon="up">
+          <span>Option 1</span>
+          <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <div class="k-row">
+        <div class="k-dropdown small" data-icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="k-dropdown" data-icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="k-dropdown large" data-icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="k-row">
+        <div class="k-dropdown small block" data-icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="k-row">
+        <div class="k-dropdown block" data-icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="k-row">
+        <div class="k-dropdown large block" data-icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+
+      <h2>Radio buttons</h2>
+      <div class="tef row">
+        <label class="k-radio">
+          <input checked="" type="radio" name="radio1">
+          <span>Radio text 1</span>
+        </label>
+        <label class="k-radio">
+          <input type="radio" name="radio1">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-radio right">
+          <input checked="" type="radio" name="radio2">
+          <span>Radio text 1</span>
+        </label>
+        <label class="k-radio right">
+          <input type="radio" name="radio2">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-radio block">
+          <input checked="" type="radio" name="radio3">
+          <span>Radio text 1</span>
+        </label>
+        <label class="k-radio block block">
+          <input type="radio" name="radio3">
+          <span>Radio text 2</span>
+        </label>
+      <div class="tef row">
+        <label class="k-radio block right">
+          <input checked="" type="radio" name="radio4">
+          <span>Radio text 1</span>
+        </label>
+        <label class="k-radio block right">
+          <input type="radio" name="radio4">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-radio disabled">
+          <input checked="" type="radio" name="radio5">
+          <span>Radio text 1</span>
+        </label>
+        <label class="k-radio" disabled>
+          <input type="radio" name="radio5">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+
+      <h2>Checkboxes</h2>
+      <div class="tef row">
+        <label class="k-checkbox">
+          <input checked="" type="checkbox">
+          <span data-icon="check">Checkbox text 1</span>
+        </label>
+        <label class="k-checkbox">
+          <input type="checkbox">
+          <span data-icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-checkbox right">
+          <input checked="" type="checkbox">
+          <span data-icon="check">Checkbox text 1</span>
+        </label>
+        <label class="k-checkbox right">
+          <input type="checkbox">
+          <span data-icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-checkbox block">
+          <input checked="" type="checkbox">
+          <span data-icon="check">Checkbox text 1</span>
+        </label>
+        <label class="k-checkbox block block">
+          <input type="checkbox">
+          <span data-icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-checkbox block right">
+          <input checked="" type="checkbox">
+          <span data-icon="check">Checkbox text 1</span>
+        </label>
+        <label class="k-checkbox block right">
+          <input type="checkbox">
+          <span data-icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-checkbox disabled">
+          <input checked="" type="checkbox">
+          <span data-icon="check">Checkbox text 1</span>
+        </label>
+        <label class="k-checkbox" disabled>
+          <input type="checkbox">
+          <span data-icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+
+      <h2>Switches</h2>
+      <div class="tef row">
+        <label class="k-switch">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="k-switch">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-switch right">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="k-switch right">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-switch block">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="k-switch block block">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-switch block right">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="k-switch block right">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="k-switch disabled">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="k-switch" disabled>
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+
+      <h2>Tabs</h2>
+      <div class="k-row">
+        <ul class="k-tabs" data-columns="4">
+          <li>Tab 1</li>
+          <li class="active">Tab 2</li>
+          <li>Tab 3 with a very loooooooooooooooooooong text</li>
+          <li>Tab 4</li>
+        </ul>
+      </div>
+      <div class="k-row">
+        <ul class="k-tabs" data-columns="3">
+          <li><i data-icon="user"></i></li>
+          <li class="active"><i data-icon="search"></i></li>
+          <li><i data-icon="help_circle"></i></li>
+        </ul>
+      </div>
+
+      <h2>Toolbars</h2>
+      <div class="k-row">
+        <nav class="k-toolbar">
+          <ul>
+            <li><a href=""><i data-icon="user"></i></a></li>
+            <li><a href="">Edit</a></li>
+            <li class="active"><a href=""><i data-icon="search"></i></a></li>
+            <li><a href=""><i data-icon="help_circle"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="k-row">
+        <nav class="k-toolbar">
+          <ul class="right">
+            <li><a href=""><i data-icon="user"></i></a></li>
+            <li><a href="">Edit</a></li>
+            <li class="active"><a href=""><i data-icon="search"></i></a></li>
+            <li><a href=""><i data-icon="help_circle"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="k-row">
+        <nav class="k-toolbar dark">
+          <ul class="right">
+            <li><a href=""><i data-icon="user"></i></a></li>
+            <li><a href="">Edit</a></li>
+            <li class="active"><a href=""><i data-icon="search"></i></a></li>
+            <li><a href=""><i data-icon="help_circle"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="k-row">
+        <nav class="k-toolbar">
+          <ul>
+            <li><button class="k-button subdued small">Cancel</button></li>
+          </ul>
+          <ul class="right">
+            <li>
+              <button class="k-button small">OK</button>
+              <button class="k-button negative small">Delete</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="k-row">
+        <nav class="k-toolbar dark">
+          <ul>
+            <li><button class="k-button subdued small">Cancel</button></li>
+          </ul>
+          <ul class="right">
+            <li>
+              <button class="k-button small">OK</button>
+              <button class="k-button negative small">Delete</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="k-row">
+        <nav class="k-toolbar">
+          <ul class="k-pagination right">
+            <li>
+              <a href=""><i data-icon="left"></i></a>
+            </li>
+            <li>1 of 100</li>
+            <li>
+              <a href=""><i data-icon="right"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="k-row">
+        <nav class="k-toolbar dark">
+          <ul class="k-pagination right">
+            <li>
+              <a href=""><i data-icon="left"></i></a>
+            </li>
+            <li>1 of 100</li>
+            <li>
+              <a href=""><i data-icon="right"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <h2>Lists</h2>
+      <div class="k-row">
+        <div class="k-list">
+          <ul>
+            <li><a href="">List item 1</a></li>
+            <li>List item 2 (not clickable)</li>
+            <li><a href="">List item 3</a></li>
+            <li><a href="">List item 4</a></li>
+            <li><a href="">List item 5</a></li>
+            <li><a href="">List item 6</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Tables</h2>
+      <table class="k-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>data-column<i data-icon="sort"></i></th>
+          <th>data-column<i data-icon="sort_asc"></i></th>
+          <th>data-column<i data-icon="sort_desc"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>000000</td>
+          <td>000000</td>
+          <td>000000</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>000000</td>
+          <td>000000</td>
+          <td>000000</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>000000</td>
+          <td>000000</td>
+          <td>000000</td>
+        </tr>
+      </tbody>
+    </table>
+
+      <h2>Tooltips</h2>
+      <div class="k-center demo">
+        <div class="k-tooltip active left" tooltip="left">
+          <button class="k-button">Button 1</button>
+        </div>
+        <div class="k-tooltip active top" tooltip="top">
+          <button class="k-button positive">Button 2</button>
+        </div>
+        <div class="k-tooltip active bottom" tooltip="bottom">
+          <button class="k-button negative">Button 3</button>
+        </div>
+        <div class="k-tooltip active right" tooltip="right">
+          <button class="k-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="k-center demo">
+        <div class="k-tooltip active start left" tooltip="left start">
+          <button class="k-button">Button 1</button>
+        </div>
+        <div class="k-tooltip active start top" tooltip="top start">
+          <button class="k-button positive">Button 2</button>
+        </div>
+        <div class="k-tooltip active start bottom" tooltip="bottom start">
+          <button class="k-button negative">Button 3</button>
+        </div>
+        <div class="k-tooltip active start right" tooltip="right start">
+          <button class="k-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="k-center demo">
+        <div class="k-tooltip active end left" tooltip="left end">
+          <button class="k-button">Button 1</button>
+        </div>
+        <div class="k-tooltip active end top" tooltip="top end">
+          <button class="k-button positive">Button 2</button>
+        </div>
+        <div class="k-tooltip active end bottom" tooltip="bottom end">
+          <button class="k-button negative">Button 3</button>
+        </div>
+        <div class="k-tooltip active end right" tooltip="right end">
+          <button class="k-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="k-center demo">
+        <div class="k-tooltip active reverse left" tooltip="left reverse">
+          <button class="k-button">Button 1</button>
+        </div>
+        <div class="k-tooltip active reverse top" tooltip="top reverse">
+          <button class="k-button positive">Button 2</button>
+        </div>
+        <div class="k-tooltip active reverse bottom" tooltip="bottom reverse">
+          <button class="k-button negative">Button 3</button>
+        </div>
+        <div class="k-tooltip active reverse right" tooltip="right reverse">
+          <button class="k-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="k-center demo">
+        <div class="k-tooltip active reverse left start" tooltip="left reverse start">
+          <button class="k-button">Button 1</button>
+        </div>
+        <div class="k-tooltip active reverse top start" tooltip="top reverse start">
+          <button class="k-button positive">Button 2</button>
+        </div>
+        <div class="k-tooltip active reverse bottom start" tooltip="bottom reverse start">
+          <button class="k-button negative">Button 3</button>
+        </div>
+        <div class="k-tooltip active reverse right start" tooltip="right reverse start">
+          <button class="k-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="k-center demo">
+        <div class="k-tooltip active reverse left end" tooltip="left reverse end">
+          <button class="k-button">Button 1</button>
+        </div>
+        <div class="k-tooltip active reverse top end" tooltip="top reverse end">
+          <button class="k-button positive">Button 2</button>
+        </div>
+        <div class="k-tooltip active reverse bottom end" tooltip="bottom reverse end">
+          <button class="k-button negative">Button 3</button>
+        </div>
+        <div class="k-tooltip active reverse right end" tooltip="right reverse end">
+          <button class="k-button significant">Button 4</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var theme = document.getElementById('themeSelector');
+      theme.addEventListener('change', function() {
+        var link = document.getElementById('themeFile');
+        link.href = '../theme_'
+          + theme.value + '/css/components.'
+          + theme.value + '.css';
+      });
+    </script>
+  </body>
+</html>

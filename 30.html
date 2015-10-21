@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create your own bootstrap</title>
+    <link rel="stylesheet" href="css/components.min.css">
+    <link rel="stylesheet" href="bpinspector/css/bp-inspector.css" media="all">
+    <link rel="stylesheet" href="css/preso.css">
+    <script src="bpinspector/js/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="header-wrapper">
+      <header class="k-header">
+        <nav id="breakpoints"></nav>
+        <h1><a class="k-headline" href="1.html">Lessons learned</a></h1>
+      </header>
+    </div>
+    <div id="main-wrapper">
+      <div id="iframe-wrapper">
+        <iframe id="iframe" src="demo-layout.html"></iframe>
+      </div>
+    </div>
+    <script src="bpinspector/js/jwerty.js"></script>
+    <script>
+      var breakpoints = { 'XS' : '479',
+                          'SM' : '767',
+                          'MD' : '991',
+                          'LG' : '1166' }
+    </script>
+    <script src="bpinspector/js/bp-inspector.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

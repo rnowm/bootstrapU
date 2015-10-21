@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TEF components demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link id="themeFile" rel="stylesheet" href="../theme_telefonica/css/components.telefonica.css">
+
+    <style>
+      header[data-columns] { padding-top: 30px; }
+      h1 { margin-top: 0; }
+      header > div { padding-top: 2px; }
+      code {
+        display: block;
+        overflow: hidden;
+      }
+      style {
+        display: block;
+        white-space: pre;
+        color: #0086B3;
+        border: 1px solid #cfcece;
+        background: #f2f2f2;
+        margin: 20px 0;
+        line-height: 25px;
+        overflow-y: auto;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="k-wrapper k-content">
+      <header data-columns="2 xs1">
+        <h1>Templates</h1>
+        <div>
+          <label>Change theme</label>
+          <div class="k-dropdown" data-icon="down">
+            <select id="themeSelector">
+              <option value="telefonica">Telefónica</option>
+              <option value="movistar">Movistar</option>
+              <option value="o2">O2</option>
+              <option value="vivo">Vivo</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <h2>Headers</h2>
+      <header class="k-header">
+        <nav>
+          <button class="k-menu" data-icon="menu"></button>
+          <button class="k-close" data-icon="close"></button>
+          <ul>
+            <li><span>Hello George!</span><i data-icon="user"></i></li>
+            <li><a href=""><span>Help</span><i data-icon="help_circle"></i></a></li>
+            <li><a href=""><span>Exit</span><i data-icon="close_circle"></i></a></li>
+          </ul>
+        </nav>
+        <h1><a href="/">Service name</a></h1>
+        <h2>Brand name</h2>
+      </header>
+
+      <h2>Dialogs</h2>
+      <div class="k-dialog">
+        <header>Download started...</header>
+        <p>Downloading document. You will find it in your Downloads folder.</p>
+        <footer>
+          <button class="k-button subdued">Cancel</button>
+          <button class="k-button positive">Accept</button>
+        </footer>
+      </div>
+      <div class="k-dialog">
+        <header>
+          Download started...
+          <button class="k-close" data-icon="close"></button>
+        </header>
+        <p>Downloading document. You will find it in your Downloads folder.</p>
+        <footer>
+          <button class="k-button positive">Accept</button>
+        </footer>
+      </div>
+
+      <h2>Sidebars</h2>
+      <div data-columns="3">
+        <nav class="k-sidebar">
+          <ul class="k-tabs" data-columns="3">
+            <li><i data-icon="user"></i></li>
+            <li class="active"><i data-icon="search"></i></li>
+            <li><i data-icon="help_circle"></i></li>
+          </ul>
+          <nav class="k-toolbar">
+            <ul>
+              <li><i data-icon="user"></i></li>
+              <li>Edit</li>
+              <li class="active"><i data-icon="search"></i></li>
+              <li><i data-icon="help_circle"></i></li>
+            </ul>
+          </nav>
+          <div class="k-list">
+            <ul>
+              <li>
+                <input type="text" class="k-input icon small block">
+                <i data-icon="search"></i>
+              </li>
+            </ul>
+            <header>Group 1</header>
+            <ul>
+              <li><a href="">List item 1</a></li>
+              <li><a href="">List item 2</a></li>
+              <li><a href="">List item 3</a></li>
+              <li><a href="">List item 4</a></li>
+              <li><a href="">List item 5</a></li>
+              <li><a href="">List item 6</a></li>
+            </ul>
+            <header>Group 2</header>
+            <ul>
+              <li><a href="">List item 1</a></li>
+              <li><a href="">List item 2</a></li>
+              <li><a href="">List item 3</a></li>
+              <li><a href="">List item 4</a></li>
+              <li><a href="">List item 5</a></li>
+              <li><a href="">List item 6</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+
+    <script>
+      var theme = document.getElementById('themeSelector');
+      theme.addEventListener('change', function() {
+        var link = document.getElementById('themeFile');
+        link.href = '../theme_'
+          + theme.value + '/css/components.'
+          + theme.value + '.css';
+      });
+    </script>
+  </body>
+</html>
